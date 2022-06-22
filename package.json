@@ -1,13 +1,12 @@
 {
   "name": "@supahfunk/credits",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/supahfunk/credits.git"
   },
   "author": "Fabio Ottaviani",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/supahfunk/credits/issues"
   },
@@ -20,18 +19,13 @@
     "tabWidth": 2,
     "printWidth": 120
   },
-  "type": "module",
   "source": "src/index.js",
-  "exports": {
-    "require": "./dist/index.cjs",
-    "default": "./dist/index.modern.js"
-  },
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.module.js",
-  "unpkg": "./dist/index.umd.js", 
+  "module": "dist/index.esm.js",
+  "type": "module",
+  "sideEffects": false,
   "scripts": {
-    "build": "microbundle",
-    "dev": "microbundle watch"
+    "build": "microbundle src/index.js",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "eslint": "^8.16.0",
@@ -40,6 +34,11 @@
     "husky": "^8.0.1",
     "microbundle": "^0.15.0",
     "prettier": "^2.6.2",
-    "prettier-eslint": "^15.0.1"
+    "prettier-eslint": "^15.0.1",
+    "vite": "^2.9.9"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
   }
 }

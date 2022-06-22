@@ -1,4 +1,4 @@
-const credits = () => {
+export default credits = () => {
   const div = document.createElement('div')
   const style = {
     position: 'fixed',
@@ -16,4 +16,3 @@ const credits = () => {
   `
   document.body.appendChild(div)
 }
-export default credits
