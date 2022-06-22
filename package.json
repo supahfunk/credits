@@ -1,6 +1,6 @@
 {
   "name": "@supahfunk/credits",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "repository": {
     "type": "git",
@@ -19,12 +19,12 @@
     "tabWidth": 2,
     "printWidth": 120
   },
-  "source": "src/index.js",
-  "module": "dist/index.esm.js",
+  "source": "src/credits.js",
+  "module": "dist/credits.esm.js",
   "type": "module",
   "sideEffects": false,
   "scripts": {
-    "build": "microbundle src/index.js",
+    "build": "microbundle src/credits.js",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
