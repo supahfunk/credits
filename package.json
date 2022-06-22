@@ -1,0 +1,23 @@
+{
+  "name": "@supahfunk/credits",
+  "version": "0.0.1",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supahfunk/credits.git"
+  },
+  "author": "Fabio Ottaviani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/supahfunk/credits/issues"
+  },
+  "homepage": "https://github.com/supahfunk/credits#readme",
+  "prettier": {
+    "semi": false,
+    "trailingComma": "es5",
+    "singleQuote": true,
+    "jsxBracketSameLine": true,
+    "tabWidth": 2,
+    "printWidth": 120
+  }
+}
